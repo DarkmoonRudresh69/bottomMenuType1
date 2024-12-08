@@ -7,9 +7,13 @@
 
 import UIKit
 
+protocol BottomMenuDelegate: AnyObject {
+    func didSelectIndex(at index: Int)
+}
+
 class BottomMenuView1: UIView {
     var view :UIView!
-    
+    weak var  delegate: BottomMenuDelegate?
     @IBOutlet weak var homeSel: UIImageView!
     
     @IBOutlet weak var homLbl: UILabel!
@@ -42,6 +46,10 @@ class BottomMenuView1: UIView {
         addSubview(view)
         
         setupViews()
+        
+        homLbl.font = CustomFont.regular.font(size: 10)
+        favLbl.font = CustomFont.regular.font(size: 10)
+        profileLbl.font = CustomFont.regular.font(size: 10)
     }
     
     private func setupViews() {
@@ -56,6 +64,7 @@ class BottomMenuView1: UIView {
         profileLbl.textColor = CustomColors.lightgrayColor
         let img3 = UIImage(named: "profile")
         profileImg.image = img3
+        
     }
     
     //MARK: - IBAction Functions
@@ -90,6 +99,9 @@ class BottomMenuView1: UIView {
         profileLbl.textColor = CustomColors.lightgrayColor
         let img3 = UIImage(named: "profile")
         profileImg.image = img3
+
+        self.delegate?.didSelectIndex(at: 1)
+
     }
     
     
@@ -105,6 +117,8 @@ class BottomMenuView1: UIView {
         profileLbl.textColor = CustomColors.lightredColor
         let img3 = UIImage(named: "profileSel")
         profileImg.image = img3
+        
+        self.delegate?.didSelectIndex(at: 2)
     }
     
     

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LatestNewsCollectionViewCell" customModule="BottomMenuView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-rC-boS">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="240"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“I’m going to say this very bluntly again,” he added. “Buy them only if you’re prepared to lose all your money.”" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECA-wA-3FH">
+                        <rect key="frame" x="8" y="185.33333333333334" width="329" height="46.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto investors should be prepared to lose all their money, BOE governor says" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsf-fR-olU">
+                        <rect key="frame" x="10" y="127.66666666666667" width="325" height="33.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EvT-rC-boS" secondAttribute="trailing" id="3D9-Gp-m8o"/>
+                <constraint firstItem="EvT-rC-boS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="50N-bu-YtT"/>
+                <constraint firstItem="ECA-wA-3FH" firstAttribute="top" secondItem="dsf-fR-olU" secondAttribute="bottom" constant="24" id="CRV-RU-XG4"/>
+                <constraint firstItem="EvT-rC-boS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LWN-j8-yQl"/>
+                <constraint firstItem="dsf-fR-olU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="O5J-gn-4su"/>
+                <constraint firstAttribute="trailing" secondItem="ECA-wA-3FH" secondAttribute="trailing" constant="8" id="Ubm-wp-l8M"/>
+                <constraint firstAttribute="bottom" secondItem="EvT-rC-boS" secondAttribute="bottom" id="gQb-j9-3Fl"/>
+                <constraint firstAttribute="bottom" secondItem="ECA-wA-3FH" secondAttribute="bottom" constant="8" id="hz9-xE-xgU"/>
+                <constraint firstAttribute="trailing" secondItem="dsf-fR-olU" secondAttribute="trailing" constant="10" id="lUC-zu-tST"/>
+                <constraint firstItem="ECA-wA-3FH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pHY-ZJ-Rah"/>
+            </constraints>
+            <size key="customSize" width="287" height="149"/>
+            <point key="canvasLocation" x="180.91603053435114" y="54.577464788732399"/>
+        </collectionViewCell>
+    </objects>
+</document>
